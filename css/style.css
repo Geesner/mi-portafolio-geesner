@@ -1,0 +1,73 @@
+/* Estilos personalizados para el portafolio de Geesner Orellana */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Puedes elegir tu fuente favorita */
+    padding-top: 56px; /* Ajusta este valor si tu navbar cambia de altura. Para que el contenido no quede debajo del navbar fijo */
+}
+
+/* Estilos de la sección de Inicio */
+#inicio {
+    background: linear-gradient(to right, #007bff, #0056b3); /* Degradado de azul */
+    /* Para añadir una imagen de fondo, descomenta y ajusta: */
+    /* background: url('../img/hero-bg.jpg') center center / cover no-repeat; */
+    /* background-attachment: fixed; */
+}
+
+#inicio h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#inicio p.lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Espaciado entre secciones */
+section {
+    padding: 80px 0; /* Un buen padding para separar las secciones visualmente */
+}
+
+/* Ajustes para las tarjetas de habilidades */
+#habilidades .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#habilidades .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important; /* Bootstrap shadow-lg */
+}
+
+/* Colores personalizados para los badges de tecnologías en el portafolio */
+.badge.bg-secondary {
+    background-color: #6c757d !important; /* Color gris de Bootstrap */
+    font-size: 0.9em;
+    padding: 0.5em 0.8em;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #212529 !important; /* Gris oscuro de Bootstrap para bg-dark */
+}
+
+#contacto a {
+    color: #007bff !important; /* Color primario de Bootstrap para enlaces */
+}
+
+#contacto a:hover {
+    text-decoration: underline !important;
+}
+
+/* Responsividad para tamaños de fuente en pantallas pequeñas */
+@media (max-width: 768px) {
+    #inicio h1 {
+        font-size: 2.5rem;
+    }
+    #inicio p.lead {
+        font-size: 1.2rem;
+    }
+    section {
+        padding: 50px 0;
+    }
+}
